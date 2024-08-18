@@ -202,6 +202,11 @@ footer {
     min-height: 10%;
 }
 
+/* for home page */
+.section-intro:last-child{
+    text-align: center;
+}
+
 /* ANCHOR contact page */
 .section__contact {
     display: grid;
@@ -212,6 +217,7 @@ footer {
     align-items: baseline;
     grid-row: 3 / 4;
     margin: 10px;
+
 }
 #form-contact {
     grid-column: 2 / 3;
