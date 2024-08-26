@@ -30,8 +30,10 @@ blacks & whites
   --primary-clr: #f5f531;
   --secondary-clr: #caca4a;
   --shade2-clr: #c2c290;
-  --shade3-clr: #757552;
+  --shade3-clr: #caca4a;
   --shade4-clr: #4b4b41;
+  --shade5-clr: #fafa7e;
+  --shade6-clr: #9c9c5a;
 
   /* blacks */
   --dark-100-clr: #191918;
@@ -128,10 +130,11 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
   min-width: 100%;
   min-height: 20%;
+  padding: 2em;
 }
 nav > ul {
   display: flex;
@@ -151,7 +154,7 @@ a:visited {
   color: var(--shade3-clr);
 }
 a:hover {
-  color: var(--secondary-clr);
+  color: var(--shade5-clr);
   transform: scale(1.1);
 }
 a:focus {
@@ -258,7 +261,7 @@ label:hover {
 .btn.form-btn {
   z-index: 1;
   overflow: hidden;
-  background-color: var(--shade3-clr);
+  background-color: var(--shade6-clr);
   transition: background 0.5s ease-in-out;
 }
 .btn.form-btn:hover,
@@ -373,10 +376,11 @@ td {
   opacity: 0.85;
   grid-column: -2 / -1;
   grid-row: 7 / 8;
-  width: 125px;
-  height: 35px;
+  min-width: 125px;
+  min-height: 35px;
   justify-self: center;
   cursor: pointer;
+  padding: 5px 10px;
 }
 .btn.btn-background-circle::before {
   position: absolute;
@@ -386,7 +390,7 @@ td {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: var(--shade3-clr);
+  background-color: var(--shade6-clr);
   border-radius: var(--border-50-perc);
   transform: scale(1.5);
   transition: transform 500ms ease-in-out;
